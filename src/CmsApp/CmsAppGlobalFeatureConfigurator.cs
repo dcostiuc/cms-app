@@ -13,7 +13,8 @@ public class CmsAppGlobalFeatureConfigurator
         {
             GlobalFeatureManager.Instance.Modules.CmsKit(cmsKit =>
             {
-                cmsKit.EnableAll();
+                cmsKit.Pages.Enable();
+                cmsKit.Menu.Enable();
             });
         });
     }

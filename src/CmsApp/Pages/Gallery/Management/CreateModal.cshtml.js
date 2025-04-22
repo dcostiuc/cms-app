@@ -44,11 +44,6 @@
             formData.append("name", file.name);
             formData.append("file", file);
 
-            abp.notify.success(
-    'The product "Acme Atom Re-Arranger" has been successfully deleted.',
-    'Deleted the Product'
-);
-
             $.ajax(
                 {
                     url: fileUploadUri,

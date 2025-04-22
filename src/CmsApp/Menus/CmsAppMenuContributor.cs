@@ -44,10 +44,10 @@ public class CmsAppMenuContributor : IMenuContributor
         }
 
         //Image Gallery Management Page
-        context.Menu.Items.Add(
-            new ApplicationMenuItem(CmsAppMenus.GalleryImage.ImageMenus, l["Images"], "/ImageManagement", icon: "fa fa-palette")
-                .RequirePermissions(CmsAppPermissions.GalleryImage.Management)
-        );
+        //context.Menu.Items.Add(
+        //    new ApplicationMenuItem(CmsAppMenus.GalleryImage.ImageMenus, l["Images"], "/ImageManagement", icon: "fa fa-palette")
+        //        .RequirePermissions(CmsAppPermissions.GalleryImage.Management)
+        //);
 
         return Task.CompletedTask;
     }

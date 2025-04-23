@@ -4,10 +4,12 @@ Demo: https://drive.google.com/file/d/1rbrJ-Bvs6y__Klh4Oi0l3Z8ozdX8Lc3s/view?usp
 
 ## Description
 
-This is a simplified Content Management System (CMS) application written with the **ABP Framework**, using **ASP.NET MVC** and **Entity Framework Core** (EF Core).
+This is a Content Management System (CMS) application written with the **ABP Framework**, using **ASP.NET MVC** and **Entity Framework Core** (EF Core).  
 
-Note that this project was built on top of [CMS Kit demo]([url](https://github.com/abpframework/cms-kit-demo/)). 
-To run the project, follow the same instructions as mentioned in [CMS Kit demo]([url](https://github.com/abpframework/cms-kit-demo/)).  
+It's focused on letting the (tenant) admin create new Pages and Menus for public-facing users to view.
+
+Note that this project was built on top of [CMS Kit demo]([url](https://github.com/abpframework/cms-kit-demo/)).   
+To run the project, follow the same instructions as mentioned in [CMS Kit demo]([url](https://github.com/abpframework/cms-kit-demo/)).    
 If there is a DB-related error, try resetting the DB and/or deleting the existing migrations.
 
 ## Technical decisions and tradeoffs 

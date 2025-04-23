@@ -1,4 +1,4 @@
-# CMS Full-Stack Web App (with CMS Kit)
+# CMS Full-Stack Web App (using CMS Kit)
 
 Demo: https://drive.google.com/file/d/1rbrJ-Bvs6y__Klh4Oi0l3Z8ozdX8Lc3s/view?usp=sharing
 

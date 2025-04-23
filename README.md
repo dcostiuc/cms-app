@@ -15,7 +15,7 @@ If there is a DB-related error, try resetting the DB and/or deleting the existin
 ## Technical decisions and tradeoffs 
 
 The big decision here was using **CMS Kit**, and particularly their **Pages** and **Menu** system. 
-The alternative would have been to implement these features from scratch (e.g. creating the Entity, AppService, DTO, CRUD logic and API endpoints, etc). This was actually started in this project.  
+The alternative would have been to implement these features from scratch (e.g. creating the Entity, AppService, DTO, CRUD logic and API endpoints, etc). This was actually started in [this](https://github.com/dcostiuc/CmsPages) project.  
   
 The tradeoff is that we have less fine-tuned control over how the page functionality looks and works. In theory, it may be possible to further customize CMS Kit functionality by extending/overriding any public classes and interfaces.  
 In practice, I found it challenging to do so when I wanted to code up certain features like Create/Edit/Delete permissions or having the menu bar automatically update based on the existing pages (instead of manually changing that within the app).  
@@ -63,7 +63,7 @@ In terms of what I would improve:
 
 
 And in terms of refactoring:
-- After realizing that not much is exposed for you to extend on top of CMS Kit, I decided to try implementing a simple CMS app without using CMS Kit with the time I had left.
+- After realizing that not much is exposed for you to extend on top of CMS Kit, I decided to try [implementing a simple CMS app without using CMS Kit](https://github.com/dcostiuc/CmsPages) with the time I had left.
 - Essentially, I would consider refactoring the whole project to be more custom made (e.g. having my own Domain Entity, DTO, Application Service, UI etc).
 
 ### Thoughts about scalability, caching, modularity, or architectural improvements

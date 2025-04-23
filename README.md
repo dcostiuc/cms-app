@@ -45,7 +45,7 @@ The following tools were used:
 - ABP Framework documentation + YouTube videos
 - ChatGPT
 
-## "Next Steps" section with: 
+## Next Steps
 
 ### What you would improve, refactor, or add 
 

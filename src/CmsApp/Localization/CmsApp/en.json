@@ -18,6 +18,7 @@
     "Permission:Create": "Create",
     "Permission:Edit": "Edit",
     "Permission:Delete": "Delete",
-    "Permission:Management": "Management"
+    "Permission:Management": "Management",
+    "Permission:SetAsHomepage": "Set as Homepage"
   }
 }

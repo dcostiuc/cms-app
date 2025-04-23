@@ -1,5 +1,4 @@
-﻿using CmsApp.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
 using Volo.Abp.DependencyInjection;
@@ -29,8 +28,6 @@ namespace CmsApp.Data;
 [ReplaceDbContext(typeof(ICmsKitDbContext))]
 public class CmsAppDbContext : AbpDbContext<CmsAppDbContext>, ICmsKitDbContext
 {
-    public DbSet<GalleryImage> GalleryImages { get; set; }
-
     #region CMS Kit Entities
 
     public DbSet<Comment> Comments { get; set; }
@@ -85,10 +82,5 @@ public class CmsAppDbContext : AbpDbContext<CmsAppDbContext>, ICmsKitDbContext
         builder.ConfigureCmsKit();
 
         /* Configure your own entities here */
-        builder.Entity<GalleryImage>(b =>
-        {
-            b.ToTable(CmsAppConsts.DbTablePrefix + "Images", CmsAppConsts.DbSchema);
-            b.ConfigureByConvention();
-        });
     }
 }

@@ -8,12 +8,13 @@ namespace CmsApp.Permissions
     {
         public override void Define(IPermissionDefinitionContext context)
         {
-            var myGroup = context.AddGroup(CmsAppPermissions.GalleryImage.Root, L("Permission:ImageManagement"));
+            var pagesGroup = context.AddGroup(CmsAppPermissions.Pages.Root, L("Permission:Pages"));
 
-            myGroup.AddPermission(CmsAppPermissions.GalleryImage.Management, L("Permission:Management"));
-            myGroup.AddPermission(CmsAppPermissions.GalleryImage.Create, L("Permission:Create"));
-            myGroup.AddPermission(CmsAppPermissions.GalleryImage.Update, L("Permission:Edit"));
-            myGroup.AddPermission(CmsAppPermissions.GalleryImage.Delete, L("Permission:Delete"));
+            pagesGroup.AddPermission(CmsAppPermissions.Pages.Management, L("Permission:Management"));
+            pagesGroup.AddPermission(CmsAppPermissions.Pages.Create, L("Permission:Create"));
+            pagesGroup.AddPermission(CmsAppPermissions.Pages.Edit, L("Permission:Edit"));
+            pagesGroup.AddPermission(CmsAppPermissions.Pages.Delete, L("Permission:Delete"));
+            pagesGroup.AddPermission(CmsAppPermissions.Pages.SetAsHomepage, L("Permission:SetAsHomepage"));
         }
 
         private static LocalizableString L(string name)

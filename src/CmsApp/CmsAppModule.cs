@@ -352,32 +352,11 @@ public class CmsAppModule : AbpModule
     {
         Configure<RazorPagesOptions>(options =>
         {
-            options.Conventions.AddPageRoute("/Gallery/Index", "image-gallery");
-            options.Conventions.AddPageRoute("/Gallery/Detail", "image-gallery/{Id}/detail");
-
-            //admin UI for image-gallery management
-            options.Conventions.AddPageRoute("/Gallery/Management/Index", "ImageManagement");
         });
     }
 
     private void ConfigureCmsKit(ServiceConfigurationContext context)
     {
-        Configure<CmsKitReactionOptions>(options =>
-        {
-            options.EntityTypes.Add(
-                new ReactionEntityTypeDefinition(
-                    entityType: CmsAppConsts.ImageGalleryEntityType,
-                    reactions: new[]
-                    {
-                        new ReactionDefinition(StandardReactions.Heart)
-                    }));
-        });
-
-        Configure<CmsKitCommentOptions>(options =>
-        {
-            options.EntityTypes.Add(new CommentEntityTypeDefinition(CmsAppConsts.ImageGalleryEntityType));
-            options.IsRecaptchaEnabled = true;
-        });
     }
 
     public override async Task OnPreApplicationInitializationAsync(ApplicationInitializationContext context)

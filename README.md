@@ -8,7 +8,7 @@ This is a Content Management System (CMS) application created with the **ABP Fra
 
 It's focused on letting the (tenant) admin create new Pages and Menus for public-facing users to view.
 
-Note that this project was built using the [CMS Kit demo](https://github.com/abpframework/cms-kit-demo/).   
+Note that this project was created using the [CMS Kit demo](https://github.com/abpframework/cms-kit-demo/).   
 To run the project, follow the same instructions as mentioned in the [CMS Kit demo](https://github.com/abpframework/cms-kit-demo/).    
 If there is a DB-related error, try resetting the DB and/or deleting the existing migrations and then updating the db.
 

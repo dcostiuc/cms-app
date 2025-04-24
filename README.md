@@ -4,7 +4,7 @@ Demo: https://drive.google.com/file/d/1rbrJ-Bvs6y__Klh4Oi0l3Z8ozdX8Lc3s/view?usp
 
 ## Description
 
-This is a Content Management System (CMS) application written with the **ABP Framework**, using **ASP.NET MVC** and **Entity Framework Core** (EF Core).  
+This is a Content Management System (CMS) application created with the **ABP Framework**, using **ASP.NET MVC** and **Entity Framework Core** (EF Core).  
 
 It's focused on letting the (tenant) admin create new Pages and Menus for public-facing users to view.
 
